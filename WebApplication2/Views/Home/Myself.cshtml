@@ -1,0 +1,32 @@
+﻿@model WebApplication2.Models.Class1
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Myself</title>
+</head>
+<body>
+
+
+    <div>
+        @using (Html.BeginForm())
+        {
+            <p>Имя: Владимир </p>
+            <p>Фамилия: Разуминиин</p>
+            <p>Возраст: 17</p>
+            <p>Интересы: Спорт, кино, наука и технологии.</p>
+           <p>
+@Html.ActionLink("На главную", "Index")
+        </p>
+        }
+
+    </div>
+</body>
+</html>
+

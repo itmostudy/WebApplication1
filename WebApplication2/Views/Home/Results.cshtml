@@ -1,0 +1,28 @@
+﻿@model WebApplication2.Models.Class2
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Results</title>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        <p>Пятикратный чемпион Санкт-Петербурга по воднопу поло </p>
+        <p>Бронзовый призер первенства россии</p>
+            <p>Член сборной команды санкт-петербурга</p>
+            <p>Член сборной команды россии
+            </p>
+    }
+
+    <div>
+        @Html.ActionLink("На главную", "Index")
+    </div>
+</body>
+</html>

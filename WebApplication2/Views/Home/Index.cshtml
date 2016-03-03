@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+       <p>
+           Всем привет, меня зовут Владимир, я итмошник, и сейчас я сделаю свою домашку !
+        </p> 
+       
+        <p>
+            @Html.ActionLink("Про меня", "Myself")
+        </p>
+        <p>
+            @Html.ActionLink("Мои достижения", "Results")
+        </p>
+        @Html.ActionLink("Любимые фильмы", "Index", "Films")
+        
+        
+    </div>
+</body>
+</html>
